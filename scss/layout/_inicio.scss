@@ -1,0 +1,27 @@
+
+
+.primeraSec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/polygon-scatter-haikei.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    & p{
+        max-width: 900px;
+        text-align: center;
+        color: #fafafa;
+        font-family: 'Exo', sans-serif;
+        margin-bottom: 50px;
+        padding: 30px;
+        font-weight: bolder;
+        font-size: 65px;
+    }
+    & span{
+        text-shadow: rgb(4, 217, 255) 1px 0 10px;
+    }
+    & .laser{
+        text-shadow: rgb(255, 4, 4) 1px 0 10px;
+    }
+}

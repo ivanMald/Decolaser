@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,200&display=swap");
+header {
+  background-color: #002B5B;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-family: "Exo", sans-serif;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+.navbar .navMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+.navbar .navLink {
+  transition: 0.7s ease;
+}
+.navbar .navLink:hover {
+  color: #77f9f9;
+}
+.navbar .hamburger {
+  display: none;
+  cursor: pointer;
+}
+.navbar .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .navbar .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .navMenu {
+    top: 85px;
+    position: fixed;
+    left: -100%;
+    gap: 0;
+    flex-direction: column;
+    background-color: #002B5B;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .naviItem {
+    margin: 16px 0;
+  }
+  .navMenu.active {
+    left: 0;
+  }
+}
+.logo img {
+  height: 80px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #8FE3CF;
+  min-height: 1000px;
+}
+
+.primeraSec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/polygon-scatter-haikei.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.primeraSec p {
+  max-width: 900px;
+  text-align: center;
+  color: #fafafa;
+  font-family: "Exo", sans-serif;
+  margin-bottom: 50px;
+  padding: 30px;
+  font-weight: bolder;
+  font-size: 65px;
+}
+.primeraSec span {
+  text-shadow: rgb(4, 217, 255) 1px 0 10px;
+}
+.primeraSec .laser {
+  text-shadow: rgb(255, 4, 4) 1px 0 10px;
+}/*# sourceMappingURL=style.css.map */
