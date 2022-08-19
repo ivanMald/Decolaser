@@ -2,26 +2,119 @@
 
 .primeraSec{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
     background-image: url(../img/polygon-scatter-haikei.svg);
     background-repeat: no-repeat;
     background-size: 100%;
 
     & p{
         max-width: 900px;
-        text-align: center;
-        color: #fafafa;
         font-family: 'Exo', sans-serif;
-        margin-bottom: 50px;
-        padding: 30px;
-        font-weight: bolder;
-        font-size: 65px;
+        font-weight: bold;
+        font-size: 55px;
+        color: #FFFFFF;
+        text-shadow: #000 3px 5px 2px;
     }
-    & span{
-        text-shadow: rgb(4, 217, 255) 1px 0 10px;
+
+    & ul{
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
-    & .laser{
-        text-shadow: rgb(255, 4, 4) 1px 0 10px;
+
+    & .flexButtons{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 }
+
+.botonUno {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: #fff;
+    border: 1px solid #25D366;
+    padding: 5px;
+    position: relative;
+    width: 6.2em;
+    height: 2em;
+    transition: 0.5s;
+    font-size: 40px;
+    border-radius: 0.4em;
+}
+.botonUno h5 {
+    font-family: 'Exo', sans-serif;
+    font-size: 2rem;
+    position: absolute;
+    top: 20px;
+    left: 1.15em;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    color: #25D366;
+}
+
+.botonUno svg {
+    position: absolute;
+    top: 0.45em;
+    right: 0.5em;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 0.5s;
+    height: 1em;
+    fill: #fff;
+    width: 35px;
+}
+.botonUno:hover h5 {
+    left: 0.5em;
+    color: #fff
+}
+.botonUno:hover svg {
+    opacity: 1;
+}
+.botonUno:hover {
+    background-color: #25D366;
+}
+
+.botonDos{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: #fff;
+    padding: 5px;
+    position: relative;
+    width: 6.2em;
+    height: 2em;
+    transition: 0.8s;
+    font-size: 35px;
+    border-radius: 0.4em;
+}
+.botonDos h6{
+    font-family: 'Exo', sans-serif;
+    left: 50px;
+    top: 20px;
+    position: absolute;
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+    transition: 0.8s;
+    color: #000;
+}
+.botonDos img{
+    width: 50px;
+    opacity: 0;
+    transition: 0.8s;
+}
+.botonDos:hover img{
+    opacity: 1;
+}
+
+.botonDos:hover h6{
+    opacity: 0;
+}
+
+
