@@ -20,7 +20,9 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    gap: 45px;
+    padding: 8px;
+    z-index: 1;
     }
     & .navLink{
         transition: 0.7s ease;
