@@ -28,6 +28,11 @@ a {
   padding: 8px;
   z-index: 1;
 }
+@media screen and (max-width: 576px) {
+  .navbar .navMenu {
+    top: 70px;
+  }
+}
 .navbar .navLink {
   transition: 0.7s ease;
 }
@@ -80,6 +85,11 @@ a {
 }
 .logo img {
   height: 80px;
+}
+@media screen and (max-width: 576px) {
+  .logo img {
+    height: 55px;
+  }
 }
 
 * {

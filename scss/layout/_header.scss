@@ -23,6 +23,9 @@ a{
     gap: 45px;
     padding: 8px;
     z-index: 1;
+    @include mobile{
+        top: 70px;
+    }
     }
     & .navLink{
         transition: 0.7s ease;
@@ -79,4 +82,7 @@ a{
 
 .logo img{
     height: 80px;
+    @include mobile{
+        height: 55px;
+    }
 }
