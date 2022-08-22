@@ -128,7 +128,7 @@ body {
 }
 @media screen and (max-width: 576px) {
   .primeraSec p {
-    font-size: 25px;
+    font-size: 29px;
     max-width: 400px;
   }
 }
@@ -144,6 +144,11 @@ body {
     gap: 15px;
     margin-top: 15px;
     margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .primeraSec ul {
+    gap: 19px;
   }
 }
 .primeraSec .flexButtons {
