@@ -1,5 +1,8 @@
 header{
     background-color: #002B5B;
+    position: fixed; top: 0;
+    width: 100%;
+    z-index: 1;
 }
 li{
     list-style: none;
@@ -85,4 +88,8 @@ a{
     @include mobile{
         height: 55px;
     }
+}
+
+nav ul{
+    position: sticky;
 }

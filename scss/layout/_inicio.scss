@@ -1,6 +1,7 @@
 
 
 .primeraSec{
+    margin-top: 85px;
     display: flex;
     justify-content: space-evenly;
     background-image: url(../img/low-poly-grid-haikei.svg);
@@ -9,6 +10,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    @include mobile{
+        margin-top: 70px;
     }
 
     & p{
@@ -55,6 +59,7 @@
         @include tablet{
             gap: 15px;
             align-items: center;
+            margin-bottom: 10px;
         }
     }
 }

@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,200;1,800&display=swap");
 header {
   background-color: #002B5B;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 li {
@@ -92,6 +96,11 @@ a {
   }
 }
 
+nav ul {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -104,6 +113,7 @@ body {
 }
 
 .primeraSec {
+  margin-top: 85px;
   display: flex;
   justify-content: space-evenly;
   background-image: url(../img/low-poly-grid-haikei.svg);
@@ -114,6 +124,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .primeraSec {
+    margin-top: 70px;
   }
 }
 .primeraSec p {
@@ -170,6 +185,7 @@ body {
   .primeraSec .flexButtons {
     gap: 15px;
     align-items: center;
+    margin-bottom: 10px;
   }
 }
 
