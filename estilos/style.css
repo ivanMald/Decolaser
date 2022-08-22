@@ -97,8 +97,14 @@ body {
   display: flex;
   justify-content: space-evenly;
   background-image: url(../img/low-poly-grid-haikei.svg);
-  background-repeat: no-repeat;
   background-size: 100%;
+}
+@media screen and (max-width: 768px) {
+  .primeraSec {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .primeraSec p {
   max-width: 900px;
@@ -110,8 +116,20 @@ body {
 }
 @media screen and (max-width: 992px) {
   .primeraSec p {
-    font-size: 30px;
+    font-size: 40px;
     max-width: 500px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .primeraSec p {
+    font-size: 35px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .primeraSec p {
+    font-size: 25px;
+    max-width: 400px;
   }
 }
 .primeraSec ul {
@@ -121,10 +139,23 @@ body {
   margin-top: 25px;
   margin-bottom: 25px;
 }
+@media screen and (max-width: 768px) {
+  .primeraSec ul {
+    gap: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
 .primeraSec .flexButtons {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+@media screen and (max-width: 768px) {
+  .primeraSec .flexButtons {
+    gap: 15px;
+    align-items: center;
+  }
 }
 
 .botonUno {
@@ -144,6 +175,11 @@ body {
     font-size: 30px;
   }
 }
+@media screen and (max-width: 576px) {
+  .botonUno {
+    font-size: 25px;
+  }
+}
 
 .botonUno h5 {
   font-family: "Exo", sans-serif;
@@ -160,6 +196,12 @@ body {
   .botonUno h5 {
     font-size: 25px;
     top: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .botonUno h5 {
+    font-size: 21px;
+    top: 11px;
   }
 }
 
@@ -204,6 +246,16 @@ body {
   font-size: 35px;
   border-radius: 0.4em;
 }
+@media screen and (max-width: 992px) {
+  .botonDos {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .botonDos {
+    font-size: 20px;
+  }
+}
 
 .botonDos h6 {
   font-family: "Exo", sans-serif;
@@ -215,6 +267,20 @@ body {
   padding: 0;
   transition: 0.8s;
   color: #000;
+}
+@media screen and (max-width: 992px) {
+  .botonDos h6 {
+    font-size: 20px;
+    top: 14px;
+    left: 38px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .botonDos h6 {
+    font-size: 17px;
+    top: 11px;
+    left: 30px;
+  }
 }
 
 .botonDos img {
