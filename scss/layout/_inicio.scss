@@ -180,4 +180,101 @@
     opacity: 0;
 }
 
+.segundaSec{
+    margin: 120px 50px 50px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    @include breakNueve{
+        flex-direction: column-reverse;
+    }
+    
+    & .textDos{
+        font-family: 'Exo', sans-serif;
+        max-width: 700px;
+    }
+    & .textDos p {
+        font-size: 25px;
+        @include breakNueve{
+            font-size: 20px;
+        }
+        @include breakNueve{
+            font-size: 15px;
+        }
 
+    }
+    & .textDos h2{
+        font-size: 35px;
+        @include breakNueve{
+            font-size: 30px;
+        }
+        @include mobile{
+            font-size: 25px;
+        }
+    }
+
+    & .imgUno{
+        position: relative;
+        width: 500px;
+        height: 500px;
+        @include tablet{
+            width: 400px;
+            height: 400px;
+        }
+        @include mobile{
+            width: 280px;
+            height: 280px;
+        }
+    }
+    
+    & .imgDos{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        top: 78rem;
+        left: 25rem;
+        border: solid #fff;
+        @include breakNueve{
+            display: none;
+        }
+    }
+}
+
+.terceraSec{
+    margin: 120px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    & h2{
+        font-family: 'Exo', sans-serif;
+        font-size: 45px;
+        @include mobile{
+            font-size: 35px;
+        }
+    }
+    & p{
+        font-family: 'Exo', sans-serif;
+        font-size: 30px;
+        @include mobile{
+            font-size: 20px;
+        }
+    }
+    & button{
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        background-color: #fff;
+        border: 1px solid #25D366;
+        padding: 5px;
+        width: 5.2em;
+        height: 2em;
+        transition: 0.5s;
+        font-size: 24px;
+        border-radius: 0.4em;
+    }
+}
+.button2Sec:hover{
+    background-color: #000;
+    color: #fff;
+}
