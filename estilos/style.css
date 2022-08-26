@@ -345,6 +345,12 @@ html {
   }
 }
 .segundaSec .textDos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgba(78, 123, 113, 0.7490196078);
+  border-radius: 15px;
+  padding: 15px;
   font-family: "Exo", sans-serif;
   max-width: 700px;
 }
@@ -378,6 +384,7 @@ html {
   position: relative;
   width: 500px;
   height: 500px;
+  border-radius: 15px;
 }
 @media screen and (max-width: 768px) {
   .segundaSec .imgUno {
@@ -423,15 +430,6 @@ html {
     font-size: 35px;
   }
 }
-.terceraSec p {
-  font-family: "Exo", sans-serif;
-  font-size: 30px;
-}
-@media screen and (max-width: 576px) {
-  .terceraSec p {
-    font-size: 20px;
-  }
-}
 .terceraSec button {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   background-color: #fff;
@@ -457,18 +455,18 @@ html {
   align-items: center;
   gap: 40px;
 }
-.contenedor-cards img {
+.contenedor-cards .imgDiv1 {
   width: 400px;
   height: 400px;
 }
 @media screen and (max-width: 768px) {
-  .contenedor-cards img {
+  .contenedor-cards .imgDiv1 {
     width: 300px;
     height: 300px;
   }
 }
 @media screen and (max-width: 576px) {
-  .contenedor-cards img {
+  .contenedor-cards .imgDiv1 {
     width: 250px;
     height: 250px;
   }

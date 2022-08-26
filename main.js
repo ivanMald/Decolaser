@@ -10,3 +10,5 @@ document.querySelectorAll(".navLink").forEach(n => n.addEventListener("click", (
     navMenu.classList.remove("active");
 
 }))
+
+
