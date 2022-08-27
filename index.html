@@ -72,25 +72,48 @@
             <p>En servicio Grafico seguimos creciendo y adaptándonos a los tiempos y necesidades de los clientes, incorporando continuamente tecnología como así también conocimientos en capacitaciones en las distintas áreas que se requiere.</p>
         </div>
     </section>
-    <section class="terceraSec">
-        <h2>Algunos de mis ultimos Trabajos:</h2>
-        <div class="contenedor-cards">
-            <div>
-                <img src="./img/imgdiv1.jpeg" alt="" class="imgDiv1">
-                <p>Corte y grabado en láser</p>
-            </div>
-            <div>
-                <img src="./img/imgdiv2.jpeg" alt="" class="imgDiv1">
-                <p>Carteles en neón Flex</p>
-            </div>
-            <div>
-                <img src="./img/imgdiv3.jpeg" alt="" class="imgDiv1">
-                <p>Cartelería para emprendimientos</p>
-            </div>
-        </div> 
-        <button class="button2Sec">Ver más</button>
-    </section>
 
+    <div class="titleTres">
+        <h2>Mis ultimos trabajos:</h2>
+    </div>
+    <section class="slider">
+        
+        <div class="slider__container container">
+            <img src="./img/leftarrow.svg" alt="" class="slider__arrow" id="before">
+
+            <section class="slider__body slider__body--show" data-id="1" >
+                <div class="slider__texts">
+                    <h2 class="subtitle" >Corte y grabado láser en MFD</h2>
+                    <p class="slider__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatem minima aperiam distinctio error atque.</p>
+                </div>
+                <figure class="slider__picture">
+                    <img src="./img/imgdiv1.jpeg" alt="" class="slider__img">
+                </figure>
+            </section>
+
+            <section class="slider__body" data-id="2" >
+                <div class="slider__texts">
+                    <h2 class="subtitle">Carteles en neón Flex</h2>
+                    <p class="slider__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatem minima aperiam distinctio error atque.</p>
+                </div>
+                <figure class="slider__picture">
+                    <img src="./img/imgdiv2.jpeg" alt="" class="slider__img">
+                </figure>
+            </section>
+
+            <section class="slider__body slider--show" data-id="3" >
+                <div class="slider__texts">
+                    <h2 class="subtitle">Carteleria para emprendimientos</h2>
+                    <p class="slider__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatem minima aperiam distinctio error atque.</p>
+                </div>
+                <figure class="slider__picture">
+                    <img src="./img/imgdiv3.jpeg" alt="" class="slider__img">
+                </figure>
+            </section>
+
+            <img src="./img/right-arrow.svg" alt="" class="slider__arrow" id="next">
+        </div>
+    </section>
     <footer>
         <h2>¡Encontrame en mis redes!</h2>
         <div class="redes">
@@ -103,5 +126,6 @@
 
     </footer>
     <script src="main.js"></script>
+    <script src="sliders.js"></script>
 </body>
 </html>

@@ -248,33 +248,9 @@
     }
 }
 
-.terceraSec{
-    margin: 120px 50px 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    & h2{
-        font-family: 'Exo', sans-serif;
-        font-size: 45px;
-        @include mobile{
-            font-size: 35px;
-        }
-    }
-    & button{
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-        background-color: #fff;
-        border: 1px solid #25D366;
-        padding: 5px;
-        width: 5.2em;
-        height: 2em;
-        transition: 0.5s;
-        font-size: 24px;
-        border-radius: 0.4em;
-    }
-}
-.button2Sec:hover{
-    background-color: #000;
-    color: #fff;
+.titleTres{
+    font-family: 'Exo', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 200px;
 }
