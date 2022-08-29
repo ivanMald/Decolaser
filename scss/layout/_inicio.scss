@@ -10,9 +10,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        min-block-size: 100vh;
     }
     @include mobile{
         margin-top: 70px;
+        min-height: 100vh;
     }
 
     & p{
@@ -23,16 +25,19 @@
         color: #FFFFFF;
         text-shadow: #000 3px 5px 2px;
         @include breakNueve{
-            font-size: 40px;
+            font-size: 45px;
             max-width: 500px;
         }
         @include tablet{
-            font-size: 35px;
+            font-size: 40px;
             text-align: center;
+            margin: 10px 5px;
+            max-width: 900px;
         }
         @include mobile{
-            font-size: 29px;
-            max-width: 400px;
+            margin: 10px 5px;
+            font-size: 35px;
+            max-width: 550px;
         }
     }
 
@@ -249,8 +254,18 @@
 }
 
 .titleTres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Exo', sans-serif;
     font-size: 2rem;
-    text-align: center;
     margin-top: 200px;
+    
+    & h2{
+        background-color: #4e7b71bf;
+        padding: 12px;
+        border-radius: 15px;
+        text-align: center;
+        margin: 0 10px;
+    }
 }
